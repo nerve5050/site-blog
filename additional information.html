@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	   <meta charset="utf-8"/>
+    <title> MOVE </title>
+    <link rel="shortcut icon" type="image/x-icon" href="images4/photo.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link href="style5.css" type="text/css" rel="stylesheet" >
+	<style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+	   body{
+	    background-color:#000000;
+	   }
+    </style>
+  </head>
+  <body height="900px">
+	<nav>
+		<ul style="font-size:10px">
+			<li><a href="index.html">Головна сторінка</a></li>
+			<li class="drop"><a href="health.html">Здоров'я</a></li>
+			<li><a href="sport.html">Спорт </a></li>
+			<li><a href="idols.html">Кумири</a></li>
+			<li><a href="additional information.html">Про нас</a></li>
+		</ul>
+</nav>
+
+<section>
+<blockquote>
+	<p>
+		Справжнє життя починається тоді, коли дружиш з кращими, тренуєшся з найсильнішими і не здаєшся тоді, коли здається, що нічого вже не можна виправити!
+
+	</p>
+	<cite>Дуейн Рок Джонсон</cite>
+	</blockquote>
+</section>
+
+<div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: +50.630055, lng: 26.274395};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyCvy8LNBB8JvUzVHYwXFiUa7Wp9RK3VWRk=YOUR_API_KEY&callback=initMap">
+    </script>
+
+	<div class="info" >
+		<h2 style="color:#ffa800">Додаткова інформація</h2>
+		<p style="color:#ffa800">Адреса: ПМЛ "Елітар"</p>
+		<p style="color:#ffa800">Телефон: 0961034354</p>
+		<p style="color:#ffa800">Електронна пошта: <a href="https://accounts.google.com/signin/v2/sl/pwd?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" >anna.yevchuk26@gmail.com</a></p>
+		<p style="color:#ffa800">Створила:Євчук Анна Анатоліївна учениця 11 класу ПМЛ "Елітар"</p>
+		<p style="color:#ffa800">MOVE! © 2019-2020 move.com</p>
+	</div>
+	<!--style="background-color:#1c1c1c"-->
+
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="https://uk-ua.facebook.com/" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com/?hl=uk" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.snapchat.com/" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="https://www.flickr.com/?ytcheck=1&new_session=1" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="https://twitter.com/" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+
+</body>
+</html>
